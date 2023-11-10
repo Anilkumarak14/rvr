@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Rvrjc</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/footers/">
+
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- laoding uniocons -->
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+<!-- Calendar plugin -->
+<link rel="stylesheet" href="calendar/vanilla-calendar.min.css" />
+<script src="calendar/vanilla-calendar.min.js"></script>
+
+    <style>
+    @font-face {
+      font-family: 'TWRVR';
+      src: url(fonts/TitilliumWeb/TitilliumWeb-Regular.ttf);
+}
+      body{
+        font-family:'TWRVR';
+      }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      
+
+    .vl {
+      border-left:dashed white;
+      height: 65%;
+      width: 1.5%;
+      left: 33%;
+      position: absolute;
+    }
+
+    
+    .research{
+      background-color: rgb(240, 245, 250);
+      padding:30px;
+      border-radius: 10px;
+    }
+    .learn-btn{
+      border:1px solid #f5cdcd;
+      text-decoration: none;
+      display: inline-block;
+      color:#800000;
+      padding:5px;
+      border-radius: 15px;
+      width:100px;
+      text-align: center;
+    }
+    .read {
+      padding: 5px 10px;
+      border-radius: 5px;
+      background-color: white;
+      border: 1px solid #CCCCCC;
+    }
+
+    .read:hover{
+      background-color: orangered;
+      color: white;
+    }
+
+    .row{
+        background-position:left;
+        display:flex;
+        justify-content:space-around;
+        flex-direction:row;
+}
+
+#head{
+  padding: 1.5rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.column {
+color: white;
+opacity: 1;
+display: flex;
+text-align: center;
+justify-content: center;
+flex-direction: column;
+width: 33.33%;
+
+}
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+.counter{
+  font-size: 2.5rem;
+  font-weight: bolder;
+  padding: 1.5rem;
+  margin:0px;
+}
+
+.plus{
+  font-weight: 900;
+}
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+.parallax {
+  /* The image used */
+  background-image: url("./images/rvr1.jpg");
+
+  /* Set a specific height */
+  min-height: 250px;
+    /* opacity: 0.8; */
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="./css/footers.css" rel="stylesheet">
+    <link href="./css/nav.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+    <link href="./css/calendar.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- College Carousal -->
+    <div class="intro-box">
+      <div class="img-corousal">
+          <div class="img-box"><img class="corousal-img" src="./images/rvr2.jpg" alt=""></div>
+          <div class="img-box"><img class="corousal-img" src="./images/rvr1.jpg" alt=""></div>
+          <div class="img-box"><img class="corousal-img" src="./images/rvr3.jpg" alt=""></div>
+      </div>
+      <div class="mask">
+      </div>
+      <div class="info">
+          <div class="intro-nav">
+              <div class="links intro-flex">
+                  <a href="" class="intro-link"><i class="uil uil-user-circle"></i> Jobs </a>
+                  <a href="" class="intro-link"><i class="uil uil-credit-card"></i> Payment Gateway</a>
+              </div>
+              <div class="logo">
+                <img src="./images/rvr-logo.png" alt="">
+              </div>
+              <div class="media intro-flex">
+                  <a href="" class="intro-link"><i class="uil uil-twitter"></i></a>
+                  <a href="" class="intro-link"><i class="uil uil-linkedin"></i></a>
+                  <a href="" class="intro-link"><i class="uil uil-facebook-f"></i></a>
+                  <a href="" class="intro-link"><i class="uil uil-instagram"></i></a>
+                    <a href="" class="intro-link"><i class="uil uil-envelope"></i> RVRJC Mail</a>
+
+              </div>
+              
+          </div>
+          <div class="details">
+            <div class="left">
+              <img src="./images/founders.png" width="80px" height="60px" alt="founders of rvr">&nbsp;
+              <img src="./Icons/location.png" alt="rvr location" width="50px" height="60px">
+              <div class="location-details">
+                  <p id="unique">R.V.R. & J.C.College of Engineering,</p> 
+                  <p id="unique">Chandramoulipuram, Chowdavaram</p>
+                  <p id="unique">GUNTUR-522 019</p>
+              </div>
+            </div>
+            <div class="right">
+              <p align="right">
+                NAAC A+ GRADE<br>
+                6 Times Accerdited Courses || ISO 9011 :2015 Certified<br>
+                Che, CE, ECE,EEE, CSE, CSBS, CSE(AI&ML), CSE(IOT), CSE(DS), It, ME, MBA & MCA
+          </p>
+            </div>
+              
+          </div>
+          <br><br><br>
+
+          <div class="d-flex flex-column justify-content-between">
+            <div class="intro-nav2 d-flex justify-content-end align-items-center">
+              <a href="" class="intro-nav2-link">Admissions </a>
+              <a href="" class="intro-nav2-link">For Faculty and Staff </a>
+              <a href="" class="intro-nav2-link">Clubs </a>
+              <a href="" class="intro-nav2-link">Resources </a>
+              <!-- <a href="" class="intro-nav2-link">Resources </a>
+              <a href="" class="intro-nav2-link">Resources </a> -->
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              </form>
+            </div>
+            <br><br><br>
+            <br><br><br>
+  
+            <div class="welcome d-flex justify-content-around">
+              <div class="left pure-flex"><span class="corousel-btn"><i id="ileft" class="uis uis-angle-left"></i></span>></div>
+              <div style="overflow: hidden;" class="welcome-content">
+                <h1 class="slidable head1">WELCOME TO RVR&JC</h1>
+                <div class="text-center">
+                  <button class="slidable btn more-btn">KNOW MORE</button>
+                </div>
+              </div>
+              <div class="right pure-flex"><span class="corousel-btn"><i id="iright" class="uis uis-angle-right"></i></span></div>
+            </div>
+          </div>
+      </div>
+  </div>
+  <div class="temp">
+    <div class="intro-nav3">
+      <a href="" class="intro-nav3-link" style="border-left: 3px solid brown;padding-left: 30px;">RESEARCH </a>
+      <a href="" class="intro-nav3-link">CALENDAR</a>
+      <a href="" class="intro-nav3-link">ALUMNI </a>
+      <a href="" class="intro-nav3-link">GALLAERY </a>
+    </div>
+  </div> <br><br><br><br><br>
+
+<!--About section-->
+<section data-aos="fade-up"
+data-aos-duration="1000" class="container">
+  <div class="container pb-70 about-blk">
+    <div class="section-content ar-container-pad">
+      <div class="row">
+<div class="double-line-bottom-theme-colored-2"></div>
+
+<div class="col-md-4" class="w3-bar">
+<div><span style="color: #212331; font-size: 27.20px; font-weight: 600; text-transform: uppercase; word-wrap: break-word">ABOUT </span><span style="color: #800000; font-size: 27.20px;  font-weight: 600; text-transform: uppercase;  word-wrap: break-word">RVR&JC</span></div>
+
+
+         <p style="padding-top : 10px;" class="text-gray text-justify">Established by the renowned Nagarjuna Education Society (1967) in the year 1985, the College drew its initial impetus from people's representatives, local doctors, charitable trusts and commercial houses of Guntur District...</p>
+<a href="https://rvrjcce.ac.in/rvrjchistory.php#"> <button class="read" >Read more</button></a>
+<a target="_blank" href="https://drive.google.com/file/d/1RIPSldytNrCBO5vyCbakBS8GJguOiXjH/view"> <button class="read">Newsletter</button></a>
+        </div>
+      
+
+<!-- Principal Note -->
+<div class="col-md-3" aria-hidden="true" class="w3-container" class="jumbotron">
+    <iframe width="100%" height="220px" src="https://www.youtube.com/embed/Hyz2dol9DfM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    </div>            
+        <div class="col-md-5 director">
+<div class="col-md-12 bg-theme-iitd">
+        <div class="double-line-bottom-theme-colored-2"></div>
+<div style="width: 487px; height: 257px; position: relative; background: #FFF4F4; border-radius: 24px">
+<div style="padding-right: 180.50px; left: 25px; top: 14px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+<div><span style="color: #212331; font-size: 27.20px;  font-weight: 600; text-transform: uppercase; line-height: 38.86px; word-wrap: break-word">Principal's </span><span style="color: #800000; font-size: 27.20px;  font-weight: 600; text-transform: uppercase; line-height: 38.86px; word-wrap: break-word"> Corner</span></div>
+</div>
+<div style="left: 157.48px; top: 73.86px; position: absolute; color: black; font-size: 16px;  font-weight: 700; line-height: 22.40px; word-wrap: break-word">Dr.Kolla Srinivas</div>
+<div style="height: 112px; padding-left: 142.48px; padding-right: 7.02px; left: 15px; top: 96.25px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+<div><span style="color: #585858; font-size: 16px;  font-weight: 700; line-height: 22.40px; word-wrap: break-word">Designation: <br/></span><span style="color: #585858; font-size: 16px;  font-weight: 400; line-height: 22.40px; word-wrap: break-word">Principal,Dean Student Affirs,Professor<br/></span><span style="color: #585858; font-size: 16px;  font-weight: 700; line-height: 22.40px; word-wrap: break-word">Research Interests:<br/></span><span style="color: #585858; font-size: 13px;  font-weight: 400; line-height: 22.40px; word-wrap: break-word">Finite Element Method, Genetic Algorithm<br/>Approach, Neural Networks, Micro Genetic ...</span></div>
+<div><a href="http://me.rvrjcce.ac.in/faculty/drks.php" target="_blank" ><button class="read">Read more</button></a></div>
+</div>
+
+
+<img style="width: 127px; height: 151px; left: 14.50px; top: 93.66px; position: absolute" src="data:image/jpeg;base64,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
+" />
+<div style="width: 171.48px; height: 169.97px; left: 15px; top: 73.86px; position: absolute"></div>
+</div>
+  </div>
+</section>
+<br><br>
+
+
+
+<!-- counteers -->
+<link href="./css/odometer-theme-default.css" rel="stylesheet">
+<script src="./js/odometer.js"></script>
+  <div class="row parallax count">
+    <div class="column">
+        <div class="counter" >
+              <div  id="odometer-students"></div>
+              <span class="plus">+</span>
+          </div>
+      <h5 id="head">Students</h5>
+    </div>
+    <div class="column">
+      <div class="counter" >
+            <div  id="odometer-faculty"></div>
+            <span class="plus">+</span>
+        </div>
+      <h5 id="head">Faculty</h5>
+    </div>
+    <div class="column">
+      <div class="counter" >
+            <div  id="odometer-staff"></div>
+            <span class="plus">+</span>
+        </div>
+      <h5 id="head">Staff</h5>
+    </div>
+</div>
+
+<script>
+function getOdometer(num, elementId) {
+const od = new Odometer({
+el: document.getElementById(elementId),
+format: "(,ddd).dd",
+duration: 3000,
+theme: "default"
+});
+od.render();
+od.update(num);
+return od;
+}
+
+const odStudents = getOdometer(10000, "odometer-students");
+const odFaculty = getOdometer(700, "odometer-faculty");
+const odStaff = getOdometer(500, "odometer-staff");
+</script>
+<br><br>
+<br><br>
+<br><br>
+
+<!-- Announcements -->
+<section class="container">
+  <div class = "announce d-flex">
+    <div id="ann_tab"> 
+        <a href="styles.css" > Announcements</a>
+    </div>
+    <div class="border">
+      <marquee class="morq" direction="left" style="background-color: rgb(243, 236, 226);z-index: -1;">
+          <a href="styles.css" download><span class="m-text"> Photography Event Notice</span></a>
+          <a href="styles.css" download><span class="m-text">Regular Examination Results - Notice</span></a>
+          <a href="styles.css" download><span class="m-text last">Colorido Fest Live Stream...</span></a>
+      </marquee>
+    </div>
+    </div>
+</section>
+<br><br>
+<br><br>
+<br><br>
+
+  <!-- caledndar section -->
+<section data-aos="fade-up"
+data-aos-duration="1000" class="container">
+  <h2>ACADEMIC <span class="half">EVENTS</span></h2>
+
+  <div class="d-flex justify-content-between">
+    <div class="calendar">
+      <div class="wrapper">
+        <header class="d-flex justify-content-around align-items-center">
+          <div class="current-date "></div>
+          <div class="icons ">
+            <span id="prev"><i class="uis uis-angle-left"></i></span>
+            <span id="next"><i class="uis uis-angle-right"></i></span>
+          </div>
+        </header>
+        <div class="calendar">
+          <ul class="weeks">
+            <li>Sun</li>
+            <li>Mon</li>
+            <li>Tue</li>
+            <li>Wed</li>
+            <li>Thu</li>
+            <li>Fri</li>
+            <li>Sat</li>
+          </ul>
+          <ul class="days"></ul>
+        </div>
+      </div>
+    </div>
+    <div class="events">
+      <div data-aos="fade-up"
+      data-aos-duration="1100" class="event">
+        <div class="event-header d-flex justify-content-between">
+          <div class="border d-flex align-items-end event-header-text" style="font-size: 12px;font-weight: bold;color:#38404F">ACADEMIC CALENDAR</div>
+          <div class="date border">
+            <div class="month">oct</div>
+            <div class="pure-flex date-num">23</div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="event-info">
+          <div class="event-head">Club Endeavour</div>
+          <div class="type">General Quiz</div>
+          <div class="time">3:00 - 5:00</div>
+        </div>
+      </div>
+
+      <div data-aos="fade-up"
+      data-aos-duration="1200" class="event">
+        <div class="event-header d-flex justify-content-between">
+          <div class="border d-flex align-items-end event-header-text" style="font-size: 12px;font-weight: bold;color:#38404F">ACADEMIC CALENDAR</div>
+          <div class="date border">
+            <div class="month">oct</div>
+            <div class="pure-flex date-num">23</div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="event-info">
+          <div class="event-head">Club Endeavour</div>
+          <div class="type">General Quiz</div>
+          <div class="time">3:00 - 5:00</div>
+        </div>
+      </div>
+
+      <div data-aos="fade-up"
+      data-aos-duration="1300" class="event">
+        <div class="event-header d-flex justify-content-between">
+          <div class="border d-flex align-items-end event-header-text" style="font-size: 12px;font-weight: bold;color:#38404F">ACADEMIC CALENDAR</div>
+          <div class="date border">
+            <div class="month">oct</div>
+            <div class="pure-flex date-num">23</div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="event-info">
+          <div class="event-head">Club Endeavour</div>
+          <div class="type">General Quiz</div>
+          <div class="time">3:00 - 5:00</div>
+        </div>
+      </div>
+      
+      <div data-aos="fade-up"
+      data-aos-duration="1400" class="event">
+        <div class="event-header d-flex justify-content-between">
+          <div class="border d-flex align-items-end event-header-text" style="font-size: 12px;font-weight: bold;color:#38404F">ACADEMIC CALENDAR</div>
+          <div class="date border">
+            <div class="month">oct</div>
+            <div class="pure-flex date-num">23</div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="event-info">
+          <div class="event-head">Club Endeavour</div>
+          <div class="type">General Quiz</div>
+          <div class="time">3:00 - 5:00</div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+  <!-- researches -->
+  <section data-aos="fade-up"
+  data-aos-duration="1000">
+    <div class="d-flex justify-content-between container">
+      <h1>Researches</h1>
+      <div><button style="background-color: #800000;color:white" class="btn">View All</button></div>
+    </div>
+    <br>
+  <div class="container border d-flex justify-content-evenly research">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="./research.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Research Centers</h5>
+        <p class="card-text">Fostering a culture of innovation to
+          solve developmental challenges</p>
+        <a href="#" class="learn-btn">Learn More</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="./research.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Research Centers</h5>
+        <p class="card-text">Fostering a culture of innovation to
+          solve developmental challenges</p>
+        <a href="#" class="learn-btn">Learn More</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="./research.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Research Centers</h5>
+        <p class="card-text">Fostering a culture of innovation to
+          solve developmental challenges</p>
+        <a href="#" class="learn-btn">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- <div data-aos="fade-up"
+     data-aos-duration="1000">
+     hello excuese 
+</div> -->
+
+<!-- Footer section -->
+<div data-aos="fade-up"
+data-aos-duration="1000" class="container-fluid text-white" style="background-color: #212331;">
+  <footer class="footer row row-cols-8 pt-5 border-top">
+    <div class="col-sm-4">
+      <div class="d-flex justify-content-center">
+        <img src="RVR_Logo.png" class="w-25 mx-auto rounded-circle img-fluid" alt="RVRJCCE">
+      </div>
+      <div class="d-flex flex-column text-center">
+        <h5 class="text-uppercase"> RVR&JC COLLEGE OF ENGINEERING</h5>
+        <P class="text-uppercase">CHANDRAMOULINAGAR,CHOWDAVARAM,GUNUTR-522019</P>
+      </div>
+      <ul class="d-flex  flex-column list-unstyled "> 
+        <li class=" ms-3 text-center"><img style="width:15px;height:15px" src="icons/call.png" alt="call"><a href="#" class="d-inline nav-link p-1 text-light">xxx-xxx-xxx</a></li>
+        <li class="ms-3 text-center" ><img style="width:15px;height:15px" src="icons/mail.png" alt="call"><a href="#"  class="d-inline nav-link p-1 text-light">info@rvrjc.ac.in</a></li>
+        <li class="ms-3 text-center" ><img style="width:15px;height:15px" src="icons/globe.png" alt="call"><a href="#"  class="d-inline nav-link p-1 text-light">www.rvrjc.ac.in</a></li>
+      </ul>
+
+      <ul class="list-unstyled d-flex justify-content-center">
+        <a href="https://www.youtube.com/c/RVRJCCollegeofEngineering" target="_blank"><img class="rounded-circle m-1 m-1" style="width:40px;height:40px" src="icons/youtube.png" alt="YouTube"></a>
+        <a href="https://www.facebook.com/RVR-JC-College-of-Engineering-Autonomous-442983819071705" target="_blank"><img class="rounded-circle m-1" style="width:40px;height:40px" src="icons/facebook.png" alt="facebook"></a> 
+        <a href="https://twitter.com/rvrjc_official" target="_blank"><img class="rounded-circle m-1" style="width:40px;height:40px" src="icons/twitter.png" alt="twitter"></a>
+        <a href="https://www.instagram.com/rvrjcce.official/" target="_blank"><img class="rounded-circle m-1" style="width:40px;height:40px" src="icons/instagram.png" alt="instagram"></a>
+        <a href="https://www.linkedin.com/school/r.v.r.-&-j.c.-college-of-engineering/" target="_blank"><img class="rounded-circle m-1" style="width:40px;height:40px" src="icons/linkedin.png" alt="Linkedin"></i></a>
+      </ul>
+    </div>
+
+  
+  <div class="vl p-0"></div> 
+   
+    <div class="col-sm-2">
+      <h5 class="border-bottom border-2 border-danger mb-4 pb-2" style="border-bottom-width: 50px;">Quick Links</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" style="border-bottom-style:dashed;border-color:grey" class="nav-link p-0 pb-2 text-white">Departments</a></li>
+        <li class="nav-item mb-2"><a href="#" style="border-bottom-style:dashed;border-color:grey" class="nav-link p-0 pb-2 text-white">Faculty</a></li>
+        <li class="nav-item mb-2"><a href="#" style="border-bottom-style:dashed;border-color:grey" class="nav-link p-0 pb-2 text-white">R&D Cell</a></li>
+        <li class="nav-item mb-2"><a href="#" style="border-bottom-style:dashed;border-color:grey" class="nav-link p-0 pb-2 text-white">Centres of Excellence</a></li>
+      </ul>
+    </div>
+
+    <div class="col-sm-2">
+      <h5 class="border-bottom border-2 border-danger mb-4 pb-2">Explore</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" style="border-bottom-style:dashed;border-color:grey;" class="nav-link p-0 text-white pb-2 ">Rules</a></li>
+        <li class="nav-item mb-2"><a href="#" style="border-bottom-style:dashed;border-color:grey" class="nav-link p-0 text-white pb-2 ">Campus Life</a></li>
+        <li class="nav-item mb-2"><a href="#" style="border-bottom-style:dashed;border-color:grey" class="nav-link p-0 text-white pb-2 ">Institute Newsletter</a></li>
+        <li class="nav-item mb-2"><a href="#" style="border-bottom-style:dashed;border-color:grey" class="nav-link p-0 text-white pb-2 ">Educational Programmes</a></li>
+        <li class="nav-item mb-2"><a href="#" style="border-bottom-style:dashed;border-color:grey" class="nav-link p-0 text-white pb-2 ">PhD Seminar</a></li>
+        <li class="nav-item mb-2"><a href="#" style="border-bottom-style:dashed;border-color:grey" class="nav-link p-0 text-white pb-2 ">Contact Us</a></li>
+        <!-- <li class="nav-item mb-2"><a href="#" style="border-bottom-style:dashed;border-color:grey" class="nav-link p-0 text-white pb-2 ">About Us</a></li> -->
+      </ul>
+    </div>
+    <div class="col-sm-4 p-2" >
+      <!-- <h5 class="border-bottom border-2 border-danger pb-1">Map</h5>   -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3830.3316190062897!2d80.32332137516829!3d16.254765734444238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a76e740000001%3A0xc41c8498715c6da0!2sR.V.R.%20%26%20J.C.College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1699157234638!5m2!1sen!2sin" width="100%" height="100%"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="border:2px solid ghostwhite;border-radius:10px;"></iframe>
+</div>
+    <div class="d-flex align-middle pt-2 justify-content-around" style="background-color:#2b2d3b;">
+      <p>Copyright&copy; 2021 RVR&JC College of Engineering.All rights reserved.</p>  
+      <p>Developed & Maintained by RVRJCCE</p>   
+    </div>
+  </footer>
+</div>  
+
+
+<script>
+  AOS.init();
+</script>
+<script src="./js/calendar.js"></script>
+<script src="./js/corousel.js"></script>
+  </body>
+</html>
