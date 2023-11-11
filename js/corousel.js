@@ -1,6 +1,6 @@
 let imgIndx = 1;
 let imgBoxes = document.querySelectorAll(".img-box");
-let slidableContents = ["WELCOME TO RVR&JC","FOLLOW YOUR DREAMS <br> @ RVR&JC","EXCELLENCE THROUGH <br> RESEARCH"]
+let slidableContents = ["WELCOME TO RVR&JCCE","FOLLOW YOUR DREAMS <br> @ RVR&JCCE","EXCELLENCE THROUGH <br> RESEARCH"]
 let slidables = Array.from(document.getElementsByClassName("slidable"));
 // setTimeout(function(){
 //     slidables.forEach(item => {
